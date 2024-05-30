@@ -1,0 +1,56 @@
+<div class="group max-w-[280px] relative overflow-hidden cursor-pointer">
+    <img src="https://optimal-demos.myshopify.com/cdn/shop/products/6_e2fa02fa-c4c5-4ee4-a425-cf0dce056ede_1024x1024.jpg?v=1629119913" alt="" srcset="">
+    <!-- <div class="absolute  bg-white translate-y-full p-2 w-full h-full  group-hover:-translate-y-full duration-500"> -->
+        <div class="absolute top-0  bg-white opacity-0 p-2 w-full h-full group-hover:opacity-100   duration-500 flex items-center justify-center">
+            <div class="flex flex-col items-center text-xs gap-2">
+                <a href="#" class=" hover:text-secondary font-medium ">Neck Tank Top</a>
+                <p class="font-semibold">$20.00</p>
+
+                <!-- colors -->
+                <div class=" flex items-center gap-1 cursor-pointer">
+                    <span class="flex w-3 h-3 bg-gray-200 rounded-full"></span>
+                    <span class="flex w-3 h-3 bg-gray-900 rounded-full dark:bg-gray-700"></span>
+                </div>
+
+                <!-- buttons for cart & wishlist and quick view -->
+                <ul class="flex items-center translate-y-2 opacity-0 group-hover:translate-y-1 group-hover:opacity-100 duration-300">
+                    <li>
+                        <button data-tooltip-target="wishlist" type="button" class="text-white bg-black  focus:outline-none  font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-white dark:text-black">
+                            <svg class="w-5 h-5 text-white dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
+                              </svg>
+                            <span class="sr-only">wish-list</span>
+                        </button>
+                        <div id="wishlist" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            WISHLIST
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button data-tooltip-target="add-to-cart" type="button" class="text-white bg-black   focus:outline-none  font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-white dark:text-black">
+                            <svg class="w-5 h-5 text-white dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                              </svg> 
+                            <span class="sr-only">Add-to-cart</span>
+                        </button>
+                        <div id="add-to-cart" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            ADD TO CART
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button data-tooltip-target="quick-view" type="button" class="text-white bg-black   focus:outline-none  font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-white dark:text-black">
+                            <svg class="w-5 h-5 text-white dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                              </svg>
+                            <span class="sr-only">quick-view</span>
+                        </button>
+                        <div id="quick-view" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            QUICK VIEW
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>

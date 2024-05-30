@@ -1,0 +1,55 @@
+.Link-button__normal , .Link-button__transparent{
+    position: relative;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.Link-button__transparent{
+    color: white;
+}
+
+.Link-button__normal::before , .Link-button__transparent::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #ed5055;
+}
+
+.Link-button__transparent::before{
+    background-color: white;
+}
+
+.Link-button__normal:hover{
+    color: #ed5055;
+}
+
+.Link-button__transparent:hover{
+    color: white;
+
+}
+
+.Link-button__normal:hover::before , .Link-button__transparent:hover::before{
+    animation: border-bot 0.5s ease-in-out forwards;   
+}
+
+@keyframes border-bot {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .Link-button__transparent{
+        color: black;
+    }
+}
