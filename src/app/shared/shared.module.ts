@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { CardArrivalsComponent } from './components/card-arrivals/card-arrivals.component';
 import { ArrivalsFeatureCardComponent } from './components/arrivals-feature-card/arrivals-feature-card.component';
+import { SectionThreeComponent } from './components/section-three/section-three.component';
 
 
 
@@ -14,7 +15,8 @@ import { ArrivalsFeatureCardComponent } from './components/arrivals-feature-card
     FooterComponent,
     HomePageComponent,
     CardArrivalsComponent,
-    ArrivalsFeatureCardComponent
+    ArrivalsFeatureCardComponent,
+    SectionThreeComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import { ArrivalsFeatureCardComponent } from './components/arrivals-feature-card
     FooterComponent,
     HomePageComponent,
     CardArrivalsComponent,
-    ArrivalsFeatureCardComponent
+    ArrivalsFeatureCardComponent,
+    SectionThreeComponent
   ]
 })
 export class SharedModule { }

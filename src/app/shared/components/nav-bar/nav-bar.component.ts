@@ -13,6 +13,5 @@ export class NavBarComponent {
   onWindowScroll() {
     if (window.scrollY > 0) this.transparent = false;
     else this.transparent = true;
-  
   }
 }
